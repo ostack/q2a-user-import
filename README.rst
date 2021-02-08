@@ -70,7 +70,7 @@ GNU GENERAL PUBLIC LICENSE v2 See 'LICENSE' for more information.
 ---------
 Credits
 ---------
-Plugin based on https://github.com/KrzysztofKielce/q2a-backup
+Plugin based on https://github.com/thisliquidspace/q2a-user-import
 
 Sponsored by BuiltIntelligence_.
 
@@ -78,6 +78,15 @@ Development by thisLiquidSpace_
 
 .. _BuiltIntelligence: http://builtintelligence.com
 .. _thisLiquidSpace: http://thisliquidspace.com
+
+Fix import file issue for 1.8.5 by ZhaoGuangyue_
+.. _ZhaoGuangyue: https://github.com/ostack/q2a-user-import
+
+----------
+Donate
+----------
+paypal_
+.. _paypal:https://paypal.me/guangyuezhao
 
 ---------
 About Q2A
