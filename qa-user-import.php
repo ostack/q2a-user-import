@@ -105,8 +105,12 @@ class qa_user_import {
 		 */
 
 		if (qa_clicked('userimport_send_upload_file')) {
+			
 			if (isset($_FILES["userimport_upload_file"])) {
 				$this->uploadFile();
+			}else{
+				//$this->error ="not select file";
+				echo "not select file";
 			}
 		}//
 
@@ -133,8 +137,10 @@ class qa_user_import {
 		$this->listedFiles = $this->listFiles();
 
 		return array(
-		    'ok' => $this->error ? '<span style="color:#f00;">ERROR: '.$this->error.'</span>' : ($this->msg ? $this->msg : null),
-		    'tags' => ' method="post" action="'.qa_admin_plugin_options_path(QA_PLUGIN_DIR . QA_USER_IMPORT_PARENT_DIR . "/").'" enctype="multipart/form-data" ', // File upload form tags
+		    'ok' => $this->error ? '<span style="color:#f00;">ERROR: '.$this->error.'</span>' : ($this->msg ? $this->msg : ""),
+		    //'tags' => ' "enctype="multipart/form-data" method="post" action="'.qa_self_html().'"', // File upload form tags
+			'tags' => 'ENCTYPE="multipart/form-data" METHOD="POST" ACTION="'.qa_self_html().'"',
+			//'tags' => ' method="post" action="'.qa_admin_plugin_options_path(QA_PLUGIN_DIR . QA_USER_IMPORT_PARENT_DIR . "/").'" enctype="multipart/form-data" ', // File upload form tags
 		    'fields' => array(
 				array(
 					'label' => $this->listedFiles,
