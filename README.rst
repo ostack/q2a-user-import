@@ -86,9 +86,9 @@ Fix import file issue for 1.8.5 by ZhaoGuangyue_
 ----------
 Donate
 ----------
-paypal_
+Donate by paypal_
 
-.. _paypal:https://paypal.me/guangyuezhao
+.. _paypal: https://paypal.me/guangyuezhao
 
 ---------
 About Q2A
