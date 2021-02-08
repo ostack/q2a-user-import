@@ -25,15 +25,15 @@
 */
 
 /*
-	Plugin Name: User Import
-	Plugin URI:
-	Plugin Description: User Import from CSV file
+	Plugin Name: User Batch Import from CSV
+	Plugin URI:https://github.com/ostack/q2a-user-import
+	Plugin Description: User batch import from CSV file, csv format see [test.csv] in plugin directly
 	Plugin Version: 1.0
-	Plugin Date: 2011-12-06
-	Plugin Author: thisLiquidSpace
-	Plugin Author URI: http://thisliquidspace.com
+	Plugin Date: 2021-02-08
+	Plugin Author: thisLiquidSpace,ZhaoGuangyue
+	Plugin Author URI: http://ostack.cn
 	Plugin License: GPLv2
-	Plugin Minimum Question2Answer Version: 1.5
+	Plugin Minimum Question2Answer Version: 1.8.5
 	Plugin Update Check URI:
 */
 

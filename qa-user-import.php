@@ -113,7 +113,10 @@ class qa_user_import {
 				echo "not select file";
 			}
 		}//
-
+		
+        if (qa_clicked('donate_zhao_guang_yue')) {
+				qa_redirect_raw('https://paypal.me/guangyuezhao');
+		}
 		/*
 		 * Test uploaded file
 		 */
@@ -145,13 +148,13 @@ class qa_user_import {
 				array(
 					'label' => $this->listedFiles,
 					'type' => 'static',
-					'value' => '<input type="file" name="userimport_upload_file" class="qa-form-tall-button qa-form-tall-button-0" /> '.
-							   '<input type="submit" value="Upload to server" name="userimport_send_upload_file" onclick="bck_t=\'\'" class="qa-form-tall-button qa-form-tall-button-0" /><br />'.
+					'value' => '<input type="file" name="userimport_upload_file" class="qa-form-tall-button qa-form-tall-button-0" /><br /> '.
+							   '<input type="submit" value="Upload to server" name="userimport_send_upload_file" onclick="bck_t=\'\'" class="qa-form-tall-button qa-form-tall-button-0" />  '.
 							   '<input type="submit" value="Delete all files" name="userimport_delete_files" onclick="bck_t=\'delete all files from a backup folder\'" class="qa-form-tall-button qa-form-tall-button-0" />',
 					'tags' => 'NAME="userimport_importFile"',
 				),
 				array(
-					'label' => '<span style="color:#f99; font-size:20px; text-align:center;">Caution! Ensure user CSV file is correctly formatted:<br />"&lt;email&gt;","&lt;password&gt;","&lt;username&gt;",',
+					'label' => '<span style="color:#f99; font-size:16px; text-align:center;">Caution! Ensure user CSV file is correctly formatted:<br />"&lt;email&gt;","&lt;password&gt;","&lt;username&gt;",',
 					'type' => 'custom',
 					'tags' => 'NAME="userimport_import_label"',
 				),
@@ -166,6 +169,10 @@ class qa_user_import {
 					'label' => 'Test selected file !',
 					'tags' => 'NAME="userimport_test_button" onmouseup="bck_t=\'If you import data with the wrong format it won\'t work. \nIt is recommended to make a backup first.\n\nNOTE: Backup files done with this plugin delete previous data and then do the import\'"',
 				),
+				array(
+					'label' => '# Donate Provider #',
+					'tags' => 'NAME="donate_zhao_guang_yue"',
+				)
 			),
 		);
 	}//admin_form
