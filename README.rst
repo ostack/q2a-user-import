@@ -80,12 +80,14 @@ Development by thisLiquidSpace_
 .. _thisLiquidSpace: http://thisliquidspace.com
 
 Fix import file issue for 1.8.5 by ZhaoGuangyue_
+
 .. _ZhaoGuangyue: https://github.com/ostack/q2a-user-import
 
 ----------
 Donate
 ----------
 paypal_
+
 .. _paypal:https://paypal.me/guangyuezhao
 
 ---------
